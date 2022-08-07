@@ -10,7 +10,7 @@
 #include <signal.h>
 
 #define ONE_SEC 1000000
-#define POPULATION_SIZE 20
+#define POPULATION_SIZE 120
 
 using std::cout;
 
@@ -62,7 +62,7 @@ int main(int argc, const char **argv)
 
     for (int i = 0; i < size; i++)
     {
-        genetic.Models.push_back({new Model(image_data[0].size(), {}, 10), -1.0f});
+        genetic.Models.push_back({new Model(image_data[0].size(), {32, 32, 16}, 10), -1.0f});
         genetic.Models[i].first->generateDeepNetwork(false);
     }
     std::ofstream save;
