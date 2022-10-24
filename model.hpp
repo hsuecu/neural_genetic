@@ -42,5 +42,6 @@ class Model{
     int nextConnId;
 
     Model(int idim, vector<int> hdim, int odim);
+    ~Model();
 };
 #endif
