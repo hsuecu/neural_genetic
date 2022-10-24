@@ -38,6 +38,9 @@ class Model{
     vector<Node*> nodes;
     vector<Connections*> conns;
 
+    int nextNodeId;
+    int nextConnId;
+
     Model(int idim, vector<int> hdim, int odim);
 };
 #endif

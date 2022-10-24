@@ -1,1 +1,1 @@
-g++ main.cpp -o main
+g++ main.cpp model.cpp -o bin/main
